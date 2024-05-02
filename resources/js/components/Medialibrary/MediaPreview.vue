@@ -1,6 +1,12 @@
 <template>
+  <embed
+    v-if="usePreview && media.mimeType.includes('pdf')"
+    :src="media.previewUrl"
+    type="application/pdf"
+    class="block h-24 w-full object-cover"
+  />
   <img
-    v-if="usePreview"
+    v-else-if="usePreview"
     :src="media.previewUrl"
     :alt="media.fileName"
     class="block h-24 w-full object-cover"
