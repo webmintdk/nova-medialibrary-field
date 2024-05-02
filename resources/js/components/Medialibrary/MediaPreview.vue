@@ -1,25 +1,18 @@
 <template>
   <embed
-    v-if="media.mimeType.includes('pdf')"
+    v-if="media && media.mimeType && media.mimeType.includes('pdf')"
     :src="media.previewUrl"
     type="application/pdf"
     class="block h-24 w-full object-cover"
   />
   <img
-    v-else-if="media.mimeType.includes('image')"
+    v-else
     :src="media.previewUrl"
     :alt="media.fileName"
     class="block h-24 w-full object-cover"
     style="max-height: 100%"
     @error="loadingFailed = true"
   />
-  <div v-else class="bg-40 flex items-center justify-center">
-    <slot name="fallback">
-      <span class="select-none truncate">
-        {{ media.extension.toUpperCase() }}
-      </span>
-    </slot>
-  </div>
   <div style="
     position: relative;
     height: 20px;
