@@ -20,6 +20,9 @@
       </span>
     </slot>
   </div>
+  <div>
+    <a :href="media.downloadUrl" target="_blank" class="text-xs text-80 truncate">Se medie</a>
+  </div>
 </template>
 
 <script>
