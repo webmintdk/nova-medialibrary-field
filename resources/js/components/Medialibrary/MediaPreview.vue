@@ -18,6 +18,7 @@
     height: 20px;
   ">
     <a
+      v-if="showFullMediaLink"
       style="
         position: absolute;
         z-index: 1;
@@ -38,6 +39,10 @@ export default {
       required: true,
     },
     useFallback: {
+      type: Boolean,
+      default: false,
+    },
+    showFullMediaLink: {
       type: Boolean,
       default: false,
     },

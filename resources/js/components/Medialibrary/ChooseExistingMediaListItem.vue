@@ -8,7 +8,7 @@
     }"
   >
     <!-- border-info-dark -->
-    <MediaPreview :media="media" class="shadow">
+    <MediaPreview :media="media" :showFullMediaLink="true" class="shadow">
       <span slot="fallback" class="text-90 select-none truncate text-xs">
         {{ media.extension.toUpperCase() }}
       </span>
