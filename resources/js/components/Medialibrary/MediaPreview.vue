@@ -13,12 +13,14 @@
     style="max-height: 100%"
     @error="loadingFailed = true"
   />
-  <div style="
-    position: relative;
-    height: 20px;
-  ">
+  <div
+    v-if="showFullMediaLink"
+    style="
+      position: relative;
+      height: 20px;
+    "
+  >
     <a
-      v-if="showFullMediaLink"
       style="
         position: absolute;
         z-index: 1;
