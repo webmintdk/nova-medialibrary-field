@@ -5,8 +5,14 @@
     :class="{ 'shadow-danger': media.uploadingFailed }"
   >
     <loader v-if="previewLoading" class="text-60" :width="30" />
+    <embed
+      v-if="media && media.mimeType && media.mimeType.includes('pdf')"
+      :src="media.previewUrl"
+      type="application/pdf"
+      class="block h-24 w-full object-cover"
+    />
     <img
-      v-if="preview"
+      v-else-if="preview"
       :src="preview"
       :alt="media.fileName"
       class="h-16 w-16 object-cover shadow"
