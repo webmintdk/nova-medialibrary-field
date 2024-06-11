@@ -14,7 +14,7 @@
     <img
       v-else-if="preview"
       :src="preview"
-      :alt="media.fileName"
+      :alt="media.previewUrl"
       class="h-16 w-16 object-cover shadow"
       :class="{ 'group-hover:opacity-75': !media.uploading }"
     />
