@@ -12,19 +12,12 @@
       class="block h-24 w-full object-cover"
     />
     <img
-      v-else-if="preview"
+      v-else
       :src="preview"
       :alt="media.previewUrl"
       class="h-16 w-16 object-cover shadow"
       :class="{ 'group-hover:opacity-75': !media.uploading }"
     />
-    <div
-      v-if="!previewLoading && !preview"
-      class="flex h-16 w-16 items-center justify-center"
-      :class="{ 'group-hover:hidden': !media.uploading }"
-    >
-      {{ media.extension }}
-    </div>
 
     <div v-if="media.uploading" class="bg-overlay absolute inset-0 h-full w-full">
       <svg class="progress-ring" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">

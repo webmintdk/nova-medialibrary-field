@@ -6984,7 +6984,7 @@ var _withScopeId = function _withScopeId(n) {
 var _hoisted_1 = ["src"];
 var _hoisted_2 = ["src", "alt"];
 var _hoisted_3 = {
-  key: 4,
+  key: 3,
   "class": "bg-overlay absolute inset-0 h-full w-full"
 };
 var _hoisted_4 = {
@@ -6994,7 +6994,7 @@ var _hoisted_4 = {
 };
 var _hoisted_5 = ["r"];
 var _hoisted_6 = {
-  key: 5,
+  key: 4,
   "class": "bg-overlay absolute inset-0 hidden group-hover:block"
 };
 var _hoisted_7 = {
@@ -7017,19 +7017,14 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     src: $props.media.previewUrl,
     type: "application/pdf",
     "class": "block h-24 w-full object-cover"
-  }, null, 8 /* PROPS */, _hoisted_1)) : $data.preview ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", {
+  }, null, 8 /* PROPS */, _hoisted_1)) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", {
     key: 2,
     src: $data.preview,
     alt: $props.media.previewUrl,
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["h-16 w-16 object-cover shadow", {
       'group-hover:opacity-75': !$props.media.uploading
     }])
-  }, null, 10 /* CLASS, PROPS */, _hoisted_2)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), !$data.previewLoading && !$data.preview ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
-    key: 3,
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["flex h-16 w-16 items-center justify-center", {
-      'group-hover:hidden': !$props.media.uploading
-    }])
-  }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.media.extension), 3 /* TEXT, CLASS */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $props.media.uploading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("circle", {
+  }, null, 10 /* CLASS, PROPS */, _hoisted_2)), $props.media.uploading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("circle", {
     r: $options.progressCircleRadius,
     style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)($options.progressCircleStyle),
     cx: "50",
