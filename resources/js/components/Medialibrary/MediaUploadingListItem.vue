@@ -9,13 +9,13 @@
       v-if="media && (media.mimeType && media.mimeType.includes('pdf')) || (media.fileName && media.fileName.endsWith('.pdf'))"
       :src="media.previewUrl"
       type="application/pdf"
-      class="block h-24 w-full object-cover"
+      class="block h-24 w-24 object-cover"
     />
     <img
       v-else
       :src="preview"
       :alt="media.previewUrl"
-      class="h-16 w-16 object-cover shadow haaaaaaaalow-from-uploadingListItem"
+      class="h-16 w-16 object-cover shadow"
       :class="{ 'group-hover:opacity-75': !media.uploading }"
     />
 

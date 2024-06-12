@@ -3,13 +3,13 @@
     v-if="media && (media.mimeType && media.mimeType.includes('pdf')) || (media.fileName && media.fileName.endsWith('.pdf'))"
     :src="media.previewUrl"
     type="application/pdf"
-    class="block h-24 w-full object-cover"
+    class="block h-24 w-24 object-cover"
   />
   <img
     v-else
     :src="media.previewUrl"
     :alt="media.fileName"
-    class="block h-24 w-full object-cover haaaaaaaalow-from-mediaPreview"
+    class="block h-24 w-full object-cover"
     style="max-height: 100%"
     @error="loadingFailed = true"
   />
