@@ -1,6 +1,6 @@
 <template>
   <embed
-    v-if="media && media.mimeType && (media.mimeType.includes('pdf') || media.fileName.endsWith('.pdf'))"
+    v-if="media && (media.mimeType && media.mimeType.includes('pdf')) || (media.fileName && media.fileName.endsWith('.pdf'))"
     :src="media.previewUrl"
     type="application/pdf"
     class="block h-24 w-full object-cover"
