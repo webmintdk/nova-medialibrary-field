@@ -6839,7 +6839,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     alt: $props.media.fileName,
     "data-media-type": $props.media.mimeType,
     "data-media-name": $props.media.fileName,
-    "class": "block h-24 w-full object-cover",
+    "class": "block h-24 w-full object-cover 12:54",
     style: {
       "max-height": "100%"
     },

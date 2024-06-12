@@ -11,7 +11,7 @@
     :alt="media.fileName"
     :data-media-type="media.mimeType"
     :data-media-name="media.fileName"
-    class="block h-24 w-full object-cover"
+    class="block h-24 w-full object-cover 12:54"
     style="max-height: 100%"
     @error="loadingFailed = true"
   />
