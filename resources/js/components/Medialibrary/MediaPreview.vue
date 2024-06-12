@@ -9,9 +9,7 @@
     v-else
     :src="media.previewUrl"
     :alt="media.fileName"
-    :data-media-type="media.mimeType"
-    :data-media-name="media.fileName"
-    class="block h-24 w-full object-cover 12:54"
+    class="block h-24 w-full object-cover"
     style="max-height: 100%"
     @error="loadingFailed = true"
   />

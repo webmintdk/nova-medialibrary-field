@@ -6797,7 +6797,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 
 var _hoisted_1 = ["src"];
-var _hoisted_2 = ["src", "alt", "data-media-type", "data-media-name"];
+var _hoisted_2 = ["src", "alt"];
 var _hoisted_3 = {
   key: 2,
   style: {
@@ -6837,9 +6837,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     key: 1,
     src: $props.media.previewUrl,
     alt: $props.media.fileName,
-    "data-media-type": $props.media.mimeType,
-    "data-media-name": $props.media.fileName,
-    "class": "block h-24 w-full object-cover 12:54",
+    "class": "block h-24 w-full object-cover",
     style: {
       "max-height": "100%"
     },
@@ -7017,7 +7015,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     key: 0,
     "class": "text-60",
     width: 30
-  })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $props.media && $props.media.mimeType && $props.media.mimeType.includes('pdf') ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("embed", {
+  })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $props.media && $props.media.mimeType && $props.media.mimeType.includes('pdf') || $props.media.fileName && $props.media.fileName.endsWith('.pdf') ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("embed", {
     key: 1,
     src: $props.media.previewUrl,
     type: "application/pdf",
@@ -7026,7 +7024,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     key: 2,
     src: $data.preview,
     alt: $props.media.previewUrl,
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["h-16 w-16 object-cover shadow", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["h-16 w-16 object-cover shadow 13:02", {
       'group-hover:opacity-75': !$props.media.uploading
     }])
   }, null, 10 /* CLASS, PROPS */, _hoisted_2)), $props.media.uploading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("circle", {

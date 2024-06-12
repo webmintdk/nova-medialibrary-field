@@ -6,7 +6,7 @@
   >
     <loader v-if="previewLoading" class="text-60" :width="30" />
     <embed
-      v-if="media && media.mimeType && media.mimeType.includes('pdf')"
+      v-if="media && (media.mimeType && media.mimeType.includes('pdf')) || (media.fileName && media.fileName.endsWith('.pdf'))"
       :src="media.previewUrl"
       type="application/pdf"
       class="block h-24 w-full object-cover"
@@ -15,7 +15,7 @@
       v-else
       :src="preview"
       :alt="media.previewUrl"
-      class="h-16 w-16 object-cover shadow"
+      class="h-16 w-16 object-cover shadow 13:02"
       :class="{ 'group-hover:opacity-75': !media.uploading }"
     />
 
