@@ -6797,7 +6797,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 
 var _hoisted_1 = ["src"];
-var _hoisted_2 = ["src", "alt"];
+var _hoisted_2 = ["src", "alt", "data-media-type", "data-media-name"];
 var _hoisted_3 = {
   key: 2,
   style: {
@@ -6837,6 +6837,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     key: 1,
     src: $props.media.previewUrl,
     alt: $props.media.fileName,
+    "data-media-type": $props.media.mimeType,
+    "data-media-name": $props.media.fileName,
     "class": "block h-24 w-full object-cover",
     style: {
       "max-height": "100%"
