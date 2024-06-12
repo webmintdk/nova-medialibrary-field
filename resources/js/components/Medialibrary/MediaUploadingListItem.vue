@@ -15,7 +15,7 @@
       v-else
       :src="preview"
       :alt="media.previewUrl"
-      class="h-16 w-16 object-cover shadow 13:02"
+      class="h-16 w-16 object-cover shadow haaaaaaaalow-from-uploadingListItem"
       :class="{ 'group-hover:opacity-75': !media.uploading }"
     />
 

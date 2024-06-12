@@ -9,7 +9,7 @@
     v-else
     :src="media.previewUrl"
     :alt="media.fileName"
-    class="block h-24 w-full object-cover"
+    class="block h-24 w-full object-cover haaaaaaaalow-from-mediaPreview"
     style="max-height: 100%"
     @error="loadingFailed = true"
   />

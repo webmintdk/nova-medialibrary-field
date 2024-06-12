@@ -8,7 +8,7 @@
           v-tooltip="tooltip(name)"
           class="group relative m-2 flex overflow-hidden rounded"
         >
-          <img :src="url" :alt="name" class="h-16 w-16 object-cover" />
+          <img :src="url" :alt="name" class="h-16 w-16 object-cover haaaaaaaalow-from-generatedConversions" />
           <div class="bg-overlay absolute inset-0 hidden group-hover:block">
             <div class="flex h-full items-center justify-center">
               <button type="button" class="hover:text-primary flex text-white focus:outline-none" @click="doCopy(url)">

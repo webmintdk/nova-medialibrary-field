@@ -6039,7 +6039,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
           src: url,
           alt: name,
-          "class": "h-16 w-16 object-cover"
+          "class": "h-16 w-16 object-cover haaaaaaaalow-from-generatedConversions"
         }, null, 8 /* PROPS */, _hoisted_2), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
           type: "button",
           "class": "hover:text-primary flex text-white focus:outline-none",
@@ -6837,7 +6837,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     key: 1,
     src: $props.media.previewUrl,
     alt: $props.media.fileName,
-    "class": "block h-24 w-full object-cover",
+    "class": "block h-24 w-full object-cover haaaaaaaalow-from-mediaPreview",
     style: {
       "max-height": "100%"
     },
@@ -7024,7 +7024,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     key: 2,
     src: $data.preview,
     alt: $props.media.previewUrl,
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["h-16 w-16 object-cover shadow 13:02", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["h-16 w-16 object-cover shadow haaaaaaaalow-from-uploadingListItem", {
       'group-hover:opacity-75': !$props.media.uploading
     }])
   }, null, 10 /* CLASS, PROPS */, _hoisted_2)), $props.media.uploading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("circle", {
