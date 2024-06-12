@@ -4975,6 +4975,9 @@ __webpack_require__.r(__webpack_exports__);
     usePreview: function usePreview() {
       return this.media.previewUrl && !this.loadingFailed && !this.useFallback;
     }
+  },
+  created: function created() {
+    console.log(this.media);
   }
 });
 

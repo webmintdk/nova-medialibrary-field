@@ -61,5 +61,8 @@ export default {
       return this.media.previewUrl && !this.loadingFailed && !this.useFallback
     },
   },
+  created() {
+    console.log(this.media)
+  }
 }
 </script>
